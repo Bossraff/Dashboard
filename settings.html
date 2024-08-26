@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html"><img src="navigation-home-3.png" alt="Home"></a></li>
+                <li><a href="charts.html"><img src="link-removebg-preview.png" alt="Charts"></a></li>
+                <li><a href="settings.html"><img src="settingslogo.png" alt="Settings"></a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <section class="content-section">
+                <header class="header">
+                    <div class="title">
+                        <h1>Settings</h1>
+                        <p>Configure your dashboard settings</p>
+                    </div>
+                </header>
+                <form id="settings-form">
+                    <label for="theme">Theme:</label>
+                    <select id="theme" name="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <br><br>
+                    <label for="notifications">Enable Notifications:</label>
+                    <input type="checkbox" id="notifications" name="notifications">
+                    <br><br>
+                    <button type="submit">Save Settings</button>
+                </form>
+            </section>
+        </div>
+        <div class="link-section">
+            <div class="image-container">
+                <img src="image.png" alt="Building">
+            </div>
+            <h2>My WEBSITES</h2>
+            <div class="link-objects">
+                <a href="windmills-loft.html" class="link-object">
+                    <h3>Windmills Loft</h3>
+                    <p class="percentage">26%</p>
+                </a>
+                <a href="seaview-villa.html" class="link-object">
+                    <h3>Seaview Villa</h3>
+                    <p class="percentage">18%</p>
+                </a>
+                <a href="family-villa.html" class="link-object">
+                    <h3>Family Villa</h3>
+                    <p class="percentage">12%</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

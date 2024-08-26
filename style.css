@@ -1,0 +1,548 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(
+          to right,
+          rgba(255, 250, 184, 0.7),
+          rgba(255, 250, 184, 0.7),
+          rgba(255, 250, 184, 0.7)
+        ),
+        url("br.jpg");
+
+    /*background: linear-gradient(0deg, rgba(255,211,245,1) 0%, rgba(188,209,252,1) 100%);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.dashboard {
+    display: flex;
+    background-color: #e3e3e3;
+    width: 90%;
+    height: 90vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+}
+
+
+
+
+.sidebar {
+    background-color: #2d3436;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.sidebar ul li a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+}
+
+.main-content {
+    padding: 20px;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header .title h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2d3436;
+}
+
+}
+.header .title {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between title and blinker */
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Adjust font size as needed */
+    display: flex;
+    align-items: center;
+}
+
+.blinker {
+    width: 12px;
+    height: 12px;
+    background-color: green; /* Color of the blinker, adjust as needed */
+    border-radius: 50%;
+    margin-left: 8px; /* Space between text and blinker */
+    animation: blink 1s infinite; /* Blinking animation */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(255,211,245,1) 0%, rgba(188,209,252,1) 100%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 8px 12px;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 8px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(50%);
+}
+
+.profit {
+    background-image: url('BG1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000; /* Adjust text color for visibility */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    height: 300px;
+}
+
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+    margin-right: 20px;
+}
+
+.link-section h2 {
+    font-size: 18px;
+    color: #2d3436;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Existing styles... */
+
+/* Task Buttons */
+.task-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.task-button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    position: relative;
+    min-width: 70px;
+    text-align: center;
+}
+
+.task-button:hover {
+    background: linear-gradient(0deg, rgba(255,211,245,1) 0%, rgba(188,209,252,1) 100%);
+    color: black;
+}
+
+.task-button.done {
+    background-color: #e74c3c; /* Red background when done */
+    color: #ffffff;
+    text-decoration: line-through; /* Strikethrough text */
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: linear-gradient(0deg, rgba(255,211,245,1) 0%, rgba(188,209,252,1) 100%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #2d3436;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #f0f0f0;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card .number {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card .number span {
+    display: block;
+    font-size: 14px;
+    color: #636e72;
+}
+
+.cards-section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Individual Card Styles */
+.card.views {
+    background: linear-gradient(0deg, rgba(255,211,245,1) 0%, rgba(188,209,252,1) 100%);
+}
+
+
+
+.bottom-card {
+    grid-column: span 2;
+}
+
+
+
+
+
+.link-objects {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-object {
+    background-color: #b0b0b0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove default link underline */
+}
+
+.link-object:hover {
+    opacity: 0.9; /* Add hover effect */
+}
+
+.link-object h3 {
+    font-size: 16px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.link-object .percentage {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00b894;
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bottom-card {
+        grid-column: span 2;
+    }
+
+    .old-card {
+        max-width: 100%; /* Ensure old-card fits within the grid on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .old-card {
+        max-width: 100%; /* Ensure old-card fits within the grid on smaller screens */
+    }
+}
+
+
+
+/* Styles for Wider Cards */
+.wide-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wide-card {
+    background-color: #949494;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #2d3436;
+    text-decoration: none;
+    flex: 1 1 45%;
+    transition: background-color 0.3s;
+}
+
+.wide-card:hover {
+    background-color: #f0f0f0;
+}
+
+.wide-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.wide-card .number {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+
+
+
+.date-time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 20px;
+    color: #333;
+}
+.date-time p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.task-button.done {
+    background-color: red; /* Change color to indicate done */
+    color: white;
+    text-decoration: line-through; /* Scratches through the text */
+}
+
+.image-container {
+    position: relative;
+    width: 300px;  /* Fixed width */
+    height: 400px; /* Fixed height */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-image: linear-gradient(
+          to right,
+          rgb(255, 204, 248, 0.7),
+          rgb(253, 255, 133, 0.8),
+          rgb(233, 195, 244, 0.7)
+        ),
+        url(".png");
+    background-position: center;
+    background-size: cover;
+    overflow: hidden; /* Hide overflow to keep slides within bounds */
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.slide {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 100px;
+    font-size: 20px;
+
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(320%); /* Center vertically */
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    border-radius: 3px;
+    background-color: rgba(0,0,0,0.5);
+    user-select: none;
+}
+
+.prev {
+    left: 10px; /* Space from the left edge */
+}
+
+.next {
+    right: 10px; /* Space from the right edge */
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Center container for prev and next buttons */
+.image-container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.current-task {
+    background-color: #e0ffe0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+}
+
+
+
+
+.completed-task {
+    background-color: #e0ffe0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    color: green;
+}
+
+.not-completed-task {
+    background-color: #ffe0e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
+    color: red;
+}
+
+
+
+
+
+
+/* Small work links box styling */
+.small-work-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 30px;
+}
+
+.small-work-box h3 {
+    margin-top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Space between boxes */
+}
+
+.box {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    flex: 1 0.1 calc(10% - 5px); /* Adjust the width to fit 4 boxes per row with space between */
+    box-sizing: border-box;
+}
+
+.box a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+}
+
+.box:hover {
+    background: #0056b3;
+}
+
+.box a:hover {
+    text-decoration: underline;
+}

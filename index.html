@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html"><img src="navigation-home-3.png" alt="Home"></a></li>
+                <li><a href="charts.html"><img src="link-removebg-preview.png" alt="Links"></a></li>
+                <li><a href="settings.html"><img src="settingslogo.png" alt="Settings"></a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <header class="header">
+                <div class="title">
+                    <h1>My Daily Task <span class="blinker"></span></h1> 
+                     <p>Control and analyze your data in the easiest way</p>
+                </div>
+                <div class="date-time">
+                    <p id="currentDateTime"></p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><img src="search-icon.webp" alt="Search"></button>
+                </div>
+            </header>
+            <section class="profit">
+                <h2>RAFFY TOMOBO ACOSTA</h2>
+                <div class="chart">
+                    <canvas id="profitChart"></canvas>
+                    <!-- Buttons to mark as done -->
+                    <div class="task-buttons">
+                        <button class="task-button">Pre-Shift</button>
+                        <button class="task-button">Check Emails</button>
+                        <button class="task-button">Attendance</button>
+                        <button class="task-button">Floor Walk</button>
+                        <button class="task-button">Done 5</button>
+                        <button class="task-button">Done 6</button>
+                        <button class="task-button">Floor Walk</button>
+                         <button class="task-button">Daily Neuron</button>
+                        <button class="task-button">EOD</button>
+                        <button class="task-button">Check Station</button>
+                        <button class="task-button">Post-Shift</button>
+                    </div>
+                </div>
+            </section>
+            <section class="cards">
+                <a href="https://docs.google.com/spreadsheets/d/1d8CIiZM-ySHpouAQbnYV1kp9hPopCF2jJALoYpIdAWM/edit?gid=1378101916#gid=1378101916" class="card views" target="_blank">
+                    <h2>Attendance</h2>
+                    <p class="number">68 Agents <span>-3 last months</span></p>
+                </a>
+                <a href="https://app.slack.com/client/TMA25RFGX/C04T8SJHK4Z" class="card views" target="_blank">
+                    <h2>Slack</h2>
+                    <p class="number">109 <span>Flywire </span></p>
+                </a>
+                <a href="https://teams.microsoft.com/v2/" class="card views" target="_blank">
+                    <h2>Teams</h2>
+                    <p class="number">10 <span>+1 last day</span></p>
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/1UDWU4Wpq0LlvMN78bwO9n3qQYWAZAu4eEjDdBlUQLhM/edit?usp=sharing" class="card views" target="_blank">
+                    <h2>BANC_proofreading</h2>
+                    <p class="number">1-10 <span>sheets</span></p>
+                </a>
+                <a href="https://calendar.google.com/calendar/u/0/r?pli=1" class="card views" target="_blank">
+                    <h2>Schedule</h2>
+                    <p class="number">10 <span>+1 last day</span></p>
+                </a>
+                <a href="https://princeton.zoom.us/my/szichieh" class="card views" target="_blank">
+                    <h2>Client zoom</h2>
+                    <p class="number">10 <span>+1 last day</span></p>
+                </a>
+                <!-- New Cards -->
+                <a href="https://611global.us/teamsixeleven/#" class="card views" target="_blank">
+                    <h2>SIELEVEN WEBSITE</h2>
+                    <p class="number">15 <span>+2 last day</span></p>
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/10YrYd_UQG2ribeK2s4x3BBRq4E0_y0HGCGLg7HG84xQ/edit?gid=2132775238#gid=2132775238" class="card views" target="_blank">
+                    <h2>BANC-proofreadung</h2>
+                    <p class="number">3 Sheets<span>Group 1</span></p>
+                </a>
+                <a href="https://docs.google.com/spreadsheets/d/1PKCREggiDjuMfEzAsuDMrRr86HoWfp8CkOWKFj2S2Q8/edit?gid=51738691#gid=51738691" class="card views" target="_blank">
+                    <h2>Daily Monitoring</h2>
+                    <p class="number">68 <span>Agents</span></p>
+                </a>
+                <a href="https://bossraff.github.io/Fly-Timer/" class="card views" target="_blank">
+                    <h2>Fly Timer</h2>
+                    <p class="number">1 <span>august 1 2024</span></p>
+                </a>
+
+            </section>
+            <section class="wide-cards">
+                <a href="new-card5.html" class="card wide-card" target="_blank">
+                    <h2>New Card 5</h2>
+                    <p class="number">35 <span>+7 last day</span></p>
+                </a>
+                <a href="new-card6.html" class="card wide-card" target="_blank">
+                    <h2>New Card 6</h2>
+                    <p class="number">40 <span>+8 last day</span></p>
+                </a>
+            </section>
+
+
+
+        </div>
+        <div class="link-section">
+            <div class="image-container">
+                <div id="activity-display">
+                    <!-- Task buttons and activities will be dynamically inserted here -->
+                </div>
+                <div class="slideshow-container">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+
+            <div class="small-work-box">
+                <h3>Quick Links</h3>
+                <div class="box-container">
+                    <div class="box">
+                        <a href="link1.html">Work </a>
+                    </div>
+                    <div class="box">
+                        <a href="link2.html">Work </a>
+                    </div>
+                    <div class="box">
+                        <a href="link3.html">Work </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
