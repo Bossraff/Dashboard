@@ -184,3 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
   generateSlides();  // Generate slides dynamically
   showSlides();  // Initialize the slideshow
 });
+
+
+
+
+
+
+
